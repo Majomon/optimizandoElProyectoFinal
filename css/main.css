@@ -5,7 +5,11 @@
     text-decoration: none
 }
 
-h1{
+h1, h3{
     padding: 1rem;
     text-align: center;
+}
+
+h2{
+    font-size: 36px;
 }
