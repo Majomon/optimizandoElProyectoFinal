@@ -13,3 +13,7 @@ h1, h3{
 h2{
     font-size: 36px;
 }
+
+p{
+    border-bottom: 1px solid black;
+}

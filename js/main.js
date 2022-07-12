@@ -66,7 +66,7 @@ function guardar(valor) {
                             <div class="d-flex flex-column align-items-center justify-content-between p-5 m-5">
                                 <h2>Bienvenido ${nombre}</h2>
                                 <h4>Gracias por registrarte </h4>
-                                <p class="p-5 m-5">El email de registro es: ${email}</p>
+                                <p class="p-2 m-2">El email de registro es: ${email}</p>
                             </div>
                         </div>
                     </div>`;
@@ -92,9 +92,11 @@ recuperoDatos(JSON.parse(localStorage.getItem("persona")));
 btnGuardar.addEventListener("click", (event) => {
     console.log(event.target);
     event.preventDefault()
-    if (check.checked) {
+
+    check.checked ? guardar("localStorage") :guardar("sessionStorage")
+/*     if (check.checked) {
         guardar("localStorage")
     } else {
         guardar("sessionStorage")
-    }
+    } */
 });
